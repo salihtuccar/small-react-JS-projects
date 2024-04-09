@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./styles.css";
 function App() {
   const [minVal, setMinVal] = useState(0);
   const [maxVal, setMaxVal] = useState(10);
@@ -21,7 +21,7 @@ function App() {
             <input
               type="number"
               value={minVal}
-              onChange={(e) => setMinVal(e.target.value)}
+              onChange={(e) => setMinVal(+e.target.value)}
             />
           </div>
           <div>
@@ -29,7 +29,7 @@ function App() {
             <input
               type="number"
               value={maxVal}
-              onChange={(e) => setMaxVal(e.target.value)}
+              onChange={(e) => setMaxVal(+e.target.value)}
             />
           </div>
         </div>

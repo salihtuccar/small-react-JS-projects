@@ -1,42 +1,20 @@
 import React, { useState } from "react";
-
-function App() {
-  const [minVal, setMinVal] = useState(0);
-  const [maxVal, setMaxVal] = useState(10);
-  const [randomNum, setRandomNum] = useState("?");
-  const giveRandomNumber = () => {
-    setRandomNum(Math.floor(Math.random() * (maxVal - minVal + 1) + minVal));
-  };
+import images from "./images";
+import "./styles.css";
+const App = () => {
+  const [selectedImage, setSelectedImage] = useState(images[0]);
   return (
-    <div className="hero">
+    <div className="app">
       <div className="container">
-        <div className="randomNum">
-          <p>
-            Random Number : <span>{randomNum}</span>
-          </p>
-        </div>
-        <div className="numContainer">
-          <div>
-            <p>Min :</p>
-            <input
-              type="number"
-              value={minVal}
-              onChange={(e) => setMinVal(e.target.value)}
-            />
-          </div>
-          <div>
-            <p>Max :</p>
-            <input
-              type="number"
-              value={maxVal}
-              onChange={(e) => setMaxVal(e.target.value)}
-            />
-          </div>
-        </div>
-        <button onClick={giveRandomNumber}>Get A Random Number</button>
+        <img src={selectedImage} alt="selected" className="selected" />
+      </div>
+      <div className="imgContainer">
+        {images.map((img, index) => (
+          <img src={img} key={index} onClick={() => setSelectedImage(img)} />
+        ))}
       </div>
     </div>
   );
-}
+};
 
 export default App;

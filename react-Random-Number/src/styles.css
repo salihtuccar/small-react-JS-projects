@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.hero {
+  width: 100%;
+  background: #2a2a72;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  font-weight: bold;
+}
+
+.hero .container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffd9c0;
+}
+.hero .container .randomNum {
+  min-width: 100%;
+  background: #faf0d7;
+  padding: 20px;
+}
+
+.hero .container .randomNum p span {
+  color: red;
+  font-weight: bold;
+}
+
+.hero .numContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  min-width: 100%;
+}
+
+.hero .container div {
+  width: 100%;
+  max-width: 42%;
+}
+
+.hero .numContainer div input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #faf0d7;
+  color: red;
+  font-weight: bold;
+}
