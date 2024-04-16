@@ -58,10 +58,18 @@ h1 {
   overflow: hidden;
   transition: all 600ms ease-in-out;
 }
-.accordionContent.show {
+.accordionContentShow {
+  background: #383a7f;
+  height: 0;
+  opacity: 0;
+  display: flex;
+  overflow: hidden;
+  transition: all 600ms ease-in-out;
+}
+/* .accordionContent.show {
   height: 180px;
   opacity: 1;
-}
+} */
 .accordionContent p {
   font-size: 15px;
   line-height: 1.6;
