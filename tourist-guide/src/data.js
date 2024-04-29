@@ -1,4 +1,4 @@
-const menu = [
+const items = [
   {
     id: 1,
     title: "Karataş Plajı",
@@ -64,4 +64,4 @@ const menu = [
     desc: `İncekum’dan Antalya yönüne doğru devam edince Soğuksu Koyu karşınıza çıkıyor. Dağdan gelen su Soğuksu Çayı ile denizle birleştiğinden deniz sıcaklığı daha düşük.`,
   },
 ];
-export default menu;
+export default items;
