@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import ReorderIcon from "@mui/icons-material/Reorder";
+
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
   const location = useLocation();
